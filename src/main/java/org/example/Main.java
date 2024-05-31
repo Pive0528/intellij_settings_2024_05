@@ -166,17 +166,25 @@ class Main6     // 05.31~ 배열 안의 값의 총 합, 평균 출력
     public static void main(String[] args) {
         int a = 10;
 
-        int[] arr = new int[3];
+        int[] arr = new int[4];
         arr[0] = 10;
         arr[1] = 20;
         arr[2] = 30;
+        arr[3] = 70;
 
-        System.out.println(arr[0]);
-        System.out.println(arr[1]);
-        System.out.println(arr[2]);
+        System.out.println(arr.length);
 
-        System.out.println("배열의 총 합: " + (arr[0]+arr[1]+arr[2]));
-        System.out.println("배열의 평균 값: " + (arr[0]+arr[1]+arr[2])/3);
+        int sum = 0;
+        for (int i = 0; i<arr.length; i++) {
+            sum += arr[i];
+        }
+        int avg = sum / arr.length;
+
+        System.out.println("배열의 총 합: " + sum);
+        System.out.printf("배열의 총 합: %d\n", sum);
+        System.out.println("배열의 평균 값: " + avg);
+        System.out.printf("배열의 평균 값: %d", avg);
+
     }
 
 }
