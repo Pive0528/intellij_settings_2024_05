@@ -166,7 +166,9 @@ class Main6     // 05.31~ 배열 안의 값의 총 합, 평균 출력
     public static void main(String[] args) {
         int a = 10;
 
-        int[] arr = new int[4];
+        int[] arr = new int[4]; // new 설계도();
+        // 정수를 (int[])모양으로 만들어진 객체의 리모컨만 들어갈 수 있는 arr라는 변수를 만들자 마자
+        // arr라는 변수에 int[4] 모양으로 객체를 만든 뒤 리모컨을 넣겠다.
         arr[0] = 10;
         arr[1] = 20;
         arr[2] = 30;
@@ -190,4 +192,36 @@ class Main6     // 05.31~ 배열 안의 값의 총 합, 평균 출력
 }
 
 
+class Main7
+{
+    public static void main(String[] args)
+    {
+        boolean[] arr1 = new boolean[3];
+        float[] arr2 = new float[3];
+        int[] arr3 = new int[10];
 
+        arr1[0] = true;
+        arr1[1] = false;
+        arr1[2] = true;
+
+        arr2[0] = 3.14f;
+        arr2[1] = 7.77f;
+        arr2[2] = 11.11f;
+
+
+        System.out.println(arr1[0]);
+        System.out.println(arr1[1]);
+        System.out.println(arr1[2]);
+
+        System.out.println(arr2[0]);
+        System.out.println(arr2[1]);
+        System.out.println(arr2[2]);
+
+        for (int i = 0; i<=arr3.length; i++) {
+            arr3[i] = i+1;
+            System.out.println(arr3[i]);
+        }
+
+
+    }
+}
