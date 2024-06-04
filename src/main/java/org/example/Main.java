@@ -230,7 +230,7 @@ class Main8 {
         a.학번 = 201549285;
         a.손크기 = 17.21;
         System.out.println(a.이름 + " " + a.나이 + " " + a.키 + " "
-                + a.학번+ " " + a.손크기);
+                + a.학번 + " " + a.손크기);
     }
 }
 
@@ -242,4 +242,77 @@ class myObject {
     long 학번;
     double 손크기;
 }
+
+// 문제 : 아래 코드가 실행되도록 자동차 클래스를 만들어주세요.
+class Main10 {
+    public static void main(String[] args) {
+        자동차.달리다();
+
+    }
+}
+
+class 자동차 {
+    static void 달리다() {
+        System.out.println("달리다");
+    }
+}
+
+class Main11        // 계산기 함수 예시
+{
+    public static void main(String[] args) {
+        계산기.합(10, 20); // 출력 30
+        계산기.합(30, 40); // 출력 70
+        // 계산기.합(9); // 출력 70
+    }
+}
+
+/*class 계산기
+{
+    static void 합(int c) {
+        System.out.println("c: "+c);
+    }
+
+    static void 합(int a, int b) {
+        System.out.println("a: "+a);
+        System.out.println("b: "+b);
+    }
+}*/
+
+
+class Main12        // 계산기 함수 예시
+{
+    public static void main(String[] args) {
+        int rs = 계산기.합(10, 20);
+        System.out.println(rs);
+
+        boolean rs2 = 계산기.is_a_bigger_than_b(10, 20);
+        System.out.println(rs2);
+        rs2 = 계산기.is_a_bigger_than_b(240, 20);
+        System.out.println(rs2);
+        rs2 = 계산기.is_a_bigger_than_b(20, 20);
+        System.out.println(rs2);
+    }
+}
+
+class 계산기 {
+    static int 합(int a, int b) {
+        return a+b;
+    }
+
+    static boolean is_a_bigger_than_b(int a, int b) {
+        if (a>b){
+            return true;
+        }
+        return false;
+    }
+
+}
+
+
+
+
+
+
+
+
 
